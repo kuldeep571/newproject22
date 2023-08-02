@@ -1,0 +1,30 @@
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-2 offset-10">
+            <a href="create_product" class="btn btn-primary">Add Product</a>
+        </div>
+    </div>
+    <div class="row">
+        <%for(let i=0; i < prodata.length; i++){%>
+        <div class="col-md-3">
+            <div class="card mt-4 mb-4">
+                <div class="card-body abcd">
+                    <img src="/image/<%= prodata[i].pro_img%>" alt="" srcset="" height="250px" width="100%">
+                </div>
+                <div class="card-footer">
+                    <div class="row">
+                        <div class="col-7">
+                            <h3 class="fontcolor m-0"><%= prodata[i].pro_name;%></h3>
+                            <p class="m-0"><%= prodata[i].discription;%></p>
+                            <p class="bolder"><i class="fa fa-inr" aria-hidden="true">Price</i><%= prodata[i].pro_price;%>/-</p>
+                        </div>
+                        <div class="col-5 buynow">
+                            <a href="#" class="btn btn-primary">BUY NOW</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <%}%>
+    </div>
+</div>

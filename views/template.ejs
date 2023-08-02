@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" integrity="sha512-PgQMlq+nqFLV4ylk1gwUOgm6CtIIXkKwaIHp/PAIWHzig/lKZSEGKEysh0TCVbHJXCLN7WetD8TFecIky75ZfQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body class="backimg">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="/create"><h3><i class="fa fa-product-hunt" aria-hidden="true">Grocery</i></h3></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+            <%if(!userloggedin){%>
+              <li class="nav-item">
+                <a class="nav-link active"  href="/home"><i class="fa fa-home" aria-hidden="true">Home</i></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/singup"><i class="fa fa-sign-in" aria-hidden="true">Singup</i></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/login"><i class="fa fa-sign-in" aria-hidden="true">Login</i></a>
+              </li>
+              <%}else{%>
+                <li class="nav-item">
+                    <a class="nav-link" href="/groce"><i class="fa fa-snowflake-o" aria-hidden="true">Grocery</i></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/userlist"><i class="fa fa-users" aria-hidden="true">userlist</i></a>
+              </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/logout"><i class="fa fa-trash" aria-hidden="true">logout</i></a>
+              </li>
+              <%}%>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <%- include(pagename);%>
+
+      <footer class="foot">
+          <p>Brand New Web </p>
+      </footer>
+</body>
+</html>

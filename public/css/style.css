@@ -1,0 +1,44 @@
+.fontcolor{
+    text-transform: uppercase;
+    color: crimson;
+    font-size: 1rem;
+}
+
+.bolder{
+    font-weight: bolder;
+    font-size: 20px;
+}
+.abcd{
+    padding: 4px;
+    margin: -4px;
+}
+.xcenter{
+    font-weight: bolder;
+}
+
+.foot{
+    background-color: lightgray;
+    margin-top: auto;
+    text-align: center;
+    font-weight: bolder;
+}
+
+footer p{
+    margin-top: 15px;
+    font-size: 20px;
+    color: bisque;
+    background-color: black;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+.buynow{
+    margin-top: 20px;    
+}
+
+#imgdata{
+    height: 550px;
+}
