@@ -2,7 +2,6 @@ const Joi = require("joi");
 
 class userValidation{
     constructor(){}
-
     async insertuser(req, res){
         let responce={
             validate: true,
@@ -22,6 +21,8 @@ class userValidation{
         }
         return responce;
     }
+
+    
 
     async loginauth(req, res){
         let responce ={

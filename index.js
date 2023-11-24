@@ -10,12 +10,6 @@ const sessionConfig = {
     secret: 'bogs121311',
     resave: false,
     saveUninitialized: true,
-    cookie: {
-        httpOnly: true,
-        secure: false,
-        path: '/',
-        maxAge: 1000 * 60 * 60 * 60 * 24
-    }
 };
 app.use(expressSession(sessionConfig));
 
